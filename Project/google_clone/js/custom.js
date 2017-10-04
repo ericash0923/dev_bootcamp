@@ -1,8 +1,8 @@
-$(function() {
-  
-// Dropdown toggle
-$('#app').click(function(){
-  $(this).next('.app-dropdown').toggle();
+$(document).ready(function(){
+    // Toggles paragraphs display
+    $("#app").click(function(){
+        $(".app-dropdown").toggle();
+    });
 });
 
 $(document).click(function(e) {
@@ -11,4 +11,5 @@ $(document).click(function(e) {
     $('.app-dropdown').hide();
   }
 });
-});
+
+
