@@ -11,7 +11,7 @@ class String
 
   def word_list
     list = downcase.scan(/[[:alpha:]]+/)
-    list.inject(Hash.new(0)) { |total, e| total[e] += 1; total}
+    list.inject(Hash.new(0)) { |total, e| total[e] += 1; total }
   end
 
   def word_list_videoSolution

@@ -10,29 +10,12 @@
     "Lorem ipsum dolor sit amet"
     ];
 
-    for (var i = 0; i < img.length; i++) {
-    var container = document.getElementById("photo");
-    container.innerHTML += '<div class="items"><img src="img/' + img[i] + '">' + '<hr><p>' + dummytext[i] + '</p></div>';
-    // container.innerHTML += img[i] + '">';
-    // container.innerHTML += '<hr><p>' + dummytext[i] + '</p></div>';
- }
-
-    return container;
-
-    // var main = document.getElementById('main');
-    // main.innerHTML = photo_gallery;
-    // document.getElementById("photo").innerText += photo_gallery;
-    // console.log(photo_gallery);
-
+    for (var i = 0; i <= 5; i++) {
+            for (var j = 0; j < img.length; j++) {
+        var container = document.getElementById("photo");
+        container.innerHTML += '<div class="items"><img src="img/' + img[j] + '">' + 
+        '<p>' + dummytext[j] + '</p></div>';
+        }
+    }
 
 })();
-
-
-// <script>
-//   var array  = [1,2,3,4,5];
-
-//   for (var i = 0; i < array.length; i++) {
-//     var container = document.getElementById("container");
-//     container.innerHTML += '<div class="box">Hello</div>';
-//   }
-// </script>

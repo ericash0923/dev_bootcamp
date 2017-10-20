@@ -7,31 +7,32 @@ header {
 	height: 55px;
 	padding: 10px;
 	border-bottom: 1px solid #e9e9e9;
+	margin-bottom: 10px;
 }
 
 .logo {
-	width: 35px;
 	float: left;
 	margin-left: 20px;
+	width: 35px;
 }
 
 .search-box {
 	float: left;
 	margin-left: 30px;
-	width: 960px
+	width: 960px;
 }
 #search {
 	height: 25px;
 	border-radius: 5px;
 	background: #e9e9e9;
 	padding: 8px;
-	width: 150%;
-	border: none
+	width: 125%;
+	border: none;
 }
 
 nav {
 	float: right;
-	margin: 5px 30px 0 0; 
+	margin: 5px 30px 0 0;
 }
 
 nav a {
@@ -40,23 +41,56 @@ nav a {
 	margin-left: 20px;
 }
 
+nav a:hover {
+	color: #555;
+}
+
 /*************
 	Photo
 **************/
 
+main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#photo {
+	-moz-column-count: 5;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	-webkit-column-count: 5;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	column-count: 5;
+	column-gap: 10px;
+	column-fill: auto;
+}
+
 .items {
-	float: left;
-	border-radius: 5px;
-	width: 300px;
-	border: 1px solid #e9e9e9;
-	box-shadow: 1px 1px 1px #888888;
-	margin: 10px;
-	padding: 8px 10px;
+	display: inline-block;
+    background: #FEFEFE;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 1px 1px #888888;
+    margin: 0px 2px 15px 0px;
+    padding: 15px 15px 5px 15px;
+    background: -webkit-linear-gradient(45deg #FFF, #F9F9F9);
+    opacity: 1;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.items:hover {
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgba(199, 199, 199, .3);
 }
 
 .items img {
+	border-bottom: 1px solid #ccc;
 	width: 100%;
-	border-radius:5px;
+	padding-bottom: 5px;
 }
 
 .items p {
