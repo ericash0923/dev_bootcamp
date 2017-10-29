@@ -103,3 +103,7 @@ footer {
 .flink a {
 	margin-right: 25px;
 }
+
+.flink img {
+	height: 15px;
+}
