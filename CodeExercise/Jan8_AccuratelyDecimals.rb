@@ -3,7 +3,7 @@ require 'bigdecimal'
 ## bigdecimal good dealing with long float integer
 
 def large_number_processor num_1, num_2
-	(BigDecimal(num1) * BigDecimal(num2)).to_s('F')
+	(BigDecimal(num_1) * BigDecimal(num_2)).to_s('F')
 end
 
 describe 'Large number processing' do
