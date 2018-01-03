@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"module": "amd",
+		"target": "es6",
+		"sourceMap": true
+	},
+	"files":[
+		"005_type_alias.ts"]
+}
